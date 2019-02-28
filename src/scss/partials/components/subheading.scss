@@ -1,0 +1,22 @@
+.Subheader {
+  height: 220px;
+  padding-bottom: 0;
+}
+
+.Subheader__Wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Subheader__Heading {
+  font-size: $root-font-size * 2;
+  font-family: $loveYou;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #fff;
+  margin-bottom: 0;
+}

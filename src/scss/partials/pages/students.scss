@@ -1,0 +1,72 @@
+.StudentsPage__Landing-Text {
+  p {
+    margin-bottom: 1rem;
+  }
+  @include responsive(0, 940px) {
+    padding: 0 1rem;
+    p {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.StudentsPage__Testimonials {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.StudentsPage__Testimonials-Body {
+  height: 100%;
+}
+
+.StudentsPage__Testimonial {
+  min-height: 150px;
+  border-bottom: 2px solid $green;
+  border-radius: 2px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  &:last-child {
+    border-bottom-color: transparent;
+  }
+}
+
+.StudentsPage__Testimonial-Image {
+  flex-basis: 100px;
+  border-radius: 50%;
+  border: 5px solid $green;
+  overflow: hidden;
+  img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+  }
+  @include responsive(768px, 940px) {
+    flex-basis: 90px;
+  }
+  @include responsive(0, 767px) {
+    flex-basis: 80px;
+  }
+}
+
+.StudentsPage__Testimonial-Text {
+  flex-basis: calc(100% - 100px);
+  padding: 0 2rem;
+  p {
+    font-size: 13px;
+    color: $text-light;
+    word-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+  }
+  @include responsive(768px, 940px) {
+    flex-basis: calc(100% - 90px);
+    padding: 0 1rem 0 2rem;
+  }
+  @include responsive(0, 767px) {
+    flex-basis: calc(100% - 80px);
+    padding: 0 1rem 0 2rem;
+  }
+}

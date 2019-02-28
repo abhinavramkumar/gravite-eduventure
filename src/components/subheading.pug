@@ -1,0 +1,9 @@
+- subheader = "Subheader"
+- wrapper = subheader + "__Wrapper"
+- heading = subheader + "__Heading"
+
+section(class="page-header background-green " + subheader)
+    .container
+        div(class=wrapper)
+            h1(class=heading)
+                block subheading

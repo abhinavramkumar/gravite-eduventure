@@ -1,0 +1,28 @@
+.CallToAction {
+  padding: 2rem 0;
+}
+
+.CallToAction__Text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  h4 {
+    font-size: 24px;
+  }
+  h4,
+  p {
+    color: white;
+  }
+  a {
+    background-color: lighten($orange, 10);
+    color: $text-on-white;
+  }
+  a.btn.with-icon:hover {
+    svg {
+      fill: $text-on-white;
+    }
+  }
+}

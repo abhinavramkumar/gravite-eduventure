@@ -1,0 +1,11 @@
+node_modules
+.cache
+production
+production-ready-downloads
+production-ready-mailer
+dist
+tasks-to-complete.md
+test.rest
+.htaccess
+yarn.lock
+/src/php/send-mail.php

@@ -1,0 +1,228 @@
+.ContactPage__Landing {
+  min-height: 100vh;
+}
+
+.ContactPage__Wrapper {
+  margin-top: 2rem;
+}
+
+.ContactPage__Contact {
+  margin-bottom: 2rem;
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  padding: 1rem 0;
+  @include responsive(0px, 1024px) {
+    flex-wrap: wrap;
+  }
+}
+
+.ContactPage__Contact-Address {
+  flex-basis: 38%;
+  opacity: 0;
+  @include responsive(0px, 1024px) {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+    h3 {
+      text-align: center;
+    }
+  }
+}
+
+.ContactPage__Contact-Address-Row {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  p:nth-child(2) {
+    flex-basis: 70%;
+  }
+  @include responsive(0px, 1024px) {
+    p:nth-child(2) {
+      flex-basis: 80%;
+    }
+  }
+}
+
+.ContactPage__Contact-Map {
+  flex-basis: 55%;
+  opacity: 0;
+  iframe {
+    height: 400px;
+    width: 100%;
+    border: 5px solid $green;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.125);
+    border-radius: 2px;
+  }
+  @include responsive(0px, 1024px) {
+    flex-basis: 100%;
+  }
+}
+
+.ContactPage__Form {
+  padding: 4rem 0 2rem;
+  min-height: 100vh;
+}
+
+.ContactPage__Body-Wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  background-color: lighten($gray, 25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.125);
+  width: 0%;
+}
+
+.ContactPage__Form-Wrapper {
+  flex-basis: 60%;
+  order: 2;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 0 1rem;
+  opacity: 0;
+  p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.ContactPage__Form-Form {
+  padding: 1rem;
+  input,
+  textarea {
+    border-radius: 2px;
+    border: 1px solid lighten($gray, 20);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.125);
+    font-size: $small-font-size;
+    height: 40px;
+    line-height: 1.414;
+    margin: 0;
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    &:focus {
+      outline: 2px solid $green;
+    }
+  }
+  textarea {
+    height: auto;
+    min-height: 80px;
+  }
+  button {
+    width: 250px;
+    background-color: $blue;
+    color: white;
+    border: 1px solid $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      fill: white;
+      margin-left: 1rem;
+      flex-basis: 0;
+      opacity: 0;
+      transform-origin: center center;
+      transform: scale(0);
+      transition: all 200ms ease;
+    }
+    &:hover {
+      svg {
+        flex-basis: 24px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.ContactPage__Form-Group {
+  margin-bottom: 1rem;
+  height: 100%;
+  &.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .form-group {
+      flex-basis: calc(50% - 0.5rem);
+    }
+  }
+  &.row-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+  /*   Break all input elements into its own rows   */
+  @include responsive(0px, 1024px) {
+    margin-bottom: 0;
+    &.row {
+      flex-wrap: wrap;
+      .form-group {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.ContactPage__Text-Wrapper {
+  order: 1;
+  flex-basis: 40%;
+  padding: 1rem;
+  opacity: 0;
+  h5,
+  p {
+    color: $text-light;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.ContactPage__Social-List {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ContactPage__Social {
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    height: 28px;
+    width: 28px;
+    fill: $text-light;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    svg {
+      fill: white;
+    }
+  }
+}
+
+#ContactPage__Social-Facebook:hover {
+  background-color: $facebook;
+}
+
+#ContactPage__Social-Twitter:hover {
+  background-color: $twitter;
+}
+
+#ContactPage__Social-GooglePlus:hover {
+  background-color: $google-plus;
+}
+
+#ContactPage__Social-LinkedIn:hover {
+  background-color: $linked-in;
+}

@@ -1,0 +1,150 @@
+extends ./src/components/layout.pug
+
+block title
+    | Gravite Eduventure | Parents Zone
+
+block page
+    - pageIndex = 3
+    main#Parents-page.Page__Wrapper
+        //- Navbar
+        include ./src/components/navbar.pug
+
+        //- Subheading
+        include ./src/components/subheading.pug
+
+            block subheading
+                | Parents Zone
+        
+        include ./src/components/goToTop.pug
+        
+        section.Parents-page__Landing.background-white
+            .container
+                .Parents-page__Landing-Text
+                    header
+                        h3.text-green.center How can we help?
+                    p Teachers spend years honing and mastering their craft. It takes them years of sweat and toil to master their expertise. Children need to understand concepts in simple yet effective way and that is what we can provide. 
+                    p We make an effort to understand your child and customize lessons in best possible ways for your child to understand better. 
+                    p Lessons are conducted in small class size so that the teachers can optimize personalized attention for individual students. We make an extra effort to spend more hours with students who have difficulty understanding the subjects. We give regular inputs to parents, so at home you will be able to help your child even better.
+        section.background-grey.Parents-page__Instructions
+            .container
+                .Parents-page__Instructions-Wrapper
+                    header
+                        h3.center.capitalize.text-green Instructions
+                    .Parents-page__Instructions-Body
+                        ul
+                            li Please contact the centre for any query or clarification about courses, and to know the functioning of the batches.
+                            li Please ensure your child’s punctuality. Those coming in late may not be allowed to attend the respective lecture.
+                            li Every student must attend every lecture regularly. Every absence must be followed by note or SMS from parent stating the reason of absence.
+                            li Discipline must be maintained in the classrooms and in the premises. Students found misbehaving will be suspended or dismissed, while refund of fees will not be granted.
+                            li Student must report 10 min. prior to the test. No re-examination will be conducted and test paper of the missed examination can be made available to the parent/student.
+                            li Corrected answer papers will be made available within 2 weeks from the date of the examination. Parents/Students should file all test papers and answer sheets as this will help throughout the year.
+                            li Students are strictly prohibited from carrying cell-phones or eatables to the class. The centre is not responsible for the loss of cell phones within its premises.
+                            li Allotment of batch and session is solely at the discretion of the centre.
+        section.background-white.Parents-page__Testimonials#Parents-Testimonials
+            .container
+                .Parents-page__Testimonials-Wrapper
+                    header
+                        h3.center.capitalize.text-green Testimonials
+                    .Parents-page__Testimonials-Body
+                        .Parents-page__Testimonials-List
+
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote Effective and systematic approach Boosts up the self confidence and removes the fear regarding the subject Keeps up the promises...productive usage of holidays Teachers at Gravite Eduventure work along with us ..Strive to achieve perfection and success. Experiences and memories ..time spent together will be cherished always !! The best and the right place any 10th grader can be placed into !! fond class memories ...lessons learnt has left an imprint in our hearts !!
+                                    p.Parents-page__Testimonial-Name
+                                        | Sandhya 
+                                    p.Parents-page__Testimonial-Details
+                                        | Sinduja & Srinivas, Class 10th, Gopalan National School
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote My son had a year long coaching at Gravite Eduventure and I am really happy with the way they shape kids with their continual endeavours specially in Maths and Physics. Rigorous practice to solve papers is given at the center.
+                                    p.Parents-page__Testimonial-Name
+                                        | Garima 
+                                    p.Parents-page__Testimonial-Details
+                                        | Prabhav, Class 10th, Bishop Cotton Boys
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/man.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote We had enrolled our son in Gravite Eduventure and are pretty satisfied with the way he has shaped up. My son has been lucky to have come across some of the best teachers here. The faculty here is not only patient but also friendly. It is one such institute wherein great emphasis is laid on regular tests and the scores are shared through SMS. On a personal note would like to give a big thumbs up to everyone in this institute.
+                                    p.Parents-page__Testimonial-Name
+                                        | Virat Kapoor 
+                                    p.Parents-page__Testimonial-Details
+                                        | Vishwesh Kapoor, Class 10th, Ryan International School
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl-3.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote Gravite Eduventure really helped Sachin for preparing for ICSE Board exams. The teaching faculty is good, especially Maths and Chemistry. The practice tests are really helping and they give lot of resource materials to refer to. I also appreciate Manmeet’s regular SMS regarding class updates and marks sent to parents regarding kids progress.
+                                    p.Parents-page__Testimonial-Name
+                                        | Neelima 
+                                    p.Parents-page__Testimonial-Details
+                                        | Sachin, Class 10th, Greenwood High School
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote I am very satisfied with the coaching my kids are getting in Gravite Eduventure. Really helped them score 10 GPA in 10th CBSE Board Exams.
+                                    p.Parents-page__Testimonial-Name
+                                        | Anu krishnan 
+                                    p.Parents-page__Testimonial-Details
+                                        | Devi / Maya/ Harish, Class 9th, Gear School
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote Gravite Eduventure has really helped my child who was struggling to cope up with Chemistry in Class 11. Despite being in one of the best schools in Bangalore, this was one subject where the grades were constantly low. The professor at Gravite Eduventure made sure my child got personal attention and was always available to clear any doubts. There has been a marked turnaround in my child’s grades since joining Gravite Eduventure and I am thankful for the confidence the professor has been able to instill in my child.
+                                    p.Parents-page__Testimonial-Name
+                                        | Anu 
+                                    p.Parents-page__Testimonial-Details
+                                        | Tvesha, Class 9th, NPS HSR
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl-3.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote Excellent teachers with great ownership and willingness to help any time.
+                                    p.Parents-page__Testimonial-Name
+                                        | Gargi 
+                                    p.Parents-page__Testimonial-Details
+                                        | Diya, Class 6th, NPS HSR
+                            
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote Gravite Eduventure has been very helpful in coaching my daughter in Science, Maths and Hindi. I am very grateful to the team for their passion, commitment and diligence and I would definitely recommend the center to other students.
+                                    p.Parents-page__Testimonial-Name
+                                        | Brinda Sekhar 
+                                    p.Parents-page__Testimonial-Details
+                                        | Rishika Sekhar, Clas 9th, Shishu Griha
+
+                            .Parents-page__Testimonial
+                                .Parents-page__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .Parents-page__Testimonial-Text
+                                    blockquote I take great pleasure to thank the teachers at Gravite Eduventure who have been guiding my daughter to achieve her best. Teachers are very approachable and they understand the different learning styles of children. They communicate with parents and give their feedback periodically. Safety of the children at the center is assured as well. I would certainly recommend this center for any parent who is looking for good guidance.
+                                    p.Parents-page__Testimonial-Name
+                                        | Dr Yesheswini
+                                    p.Parents-page__Testimonial-Details
+                                        | Meghna, Class 6th, NPS HSR
+        include ./src/components/cta.pug
+
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js")
+     
+    script(src="./src/js/common.js")
+    script(src="./src/js/parents.js")

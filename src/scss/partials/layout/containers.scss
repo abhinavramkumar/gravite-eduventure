@@ -1,0 +1,24 @@
+/* ---------->>> CONTAINER <<<-----------*/
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  transition: width 100ms ease-in-out;
+  width: 85%;
+  @include tablet {
+    width: 92%;
+  }
+  @include responsive(0, 767px) {
+    width: 96%;
+  }
+}
+
+/*   PAGE WRAPPER CONTAINER   */
+
+.Page__Wrapper {
+  min-height: 100vh;
+  position: relative;
+  width: auto;
+}

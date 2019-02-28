@@ -1,0 +1,423 @@
+@import "./variables";
+
+@mixin bgHypnotize {
+  background: url("../images/background/hypnotize-old.png") repeat center fixed;
+  background-size: 200px 200px;
+}
+
+/* ---------->>> GLOBAL RESETS <<<-----------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1.414;
+}
+
+html {
+  color: $text-on-white;
+  font-family: $nunito, Verdana, Helvetica, sans-serif;
+  font-size: $root-font-size;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  @include responsive(0px, 767px) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+body {
+  color: $text-on-white;
+  font-family: $nunito, Verdana, Helvetica, sans-serif;
+  font-size: 1rem;
+  height: 100%;
+  line-height: 1.414;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  @include responsive(0px, 767px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body,
+p {
+  font-family: $nunito, Verdana, Helvetica, sans-serif;
+  font-size: $root-font-size;
+  font-weight: 400;
+  line-height: 1.414;
+}
+
+section {
+  padding: 2rem 0 4rem;
+}
+
+section.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+section.fadeIn {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+section.page-header {
+  padding-top: 70px;
+}
+
+/*   HEADINGS   */
+header {
+  margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-on-white;
+  font-weight: $font-bold;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: $root-font-size * 2.25;
+}
+
+h2 {
+  font-size: $root-font-size * 2;
+}
+
+h3 {
+  font-size: $root-font-size * 1.75;
+}
+
+h4 {
+  font-size: $root-font-size * 1.5;
+}
+
+h5 {
+  font-size: $root-font-size * 1.25;
+}
+
+/*   LIST STYLES   */
+li {
+  list-style-type: none;
+}
+
+/*   FORM ELEMENT STYLES   */
+input,
+textarea {
+  border-radius: 2px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.125);
+  box-sizing: border-box;
+  font-family: $nunito;
+  font-size: $small-font-size;
+  line-height: 1.414;
+  margin: 0;
+  padding: 1rem 0;
+  transition: border 100ms ease-in;
+  width: 100%;
+  &:focus {
+    border: 2px solid $green;
+  }
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: auto;
+  resize: vertical;
+}
+
+/*   A & BUTTON STYLES   */
+a,
+button {
+  background: transparent;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  font-family: $nunito;
+  font-size: calc(#{$small-font-size} - 1px);
+  font-weight: $font-bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+a.btn,
+button.btn {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 40px;
+  min-width: 88px;
+  padding: 0 1rem;
+}
+
+a.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn.icon-only {
+  height: 40px;
+  line-height: 40px;
+  min-width: 40px;
+  padding: 0;
+  width: 40px;
+}
+
+.btn.with-icon {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+  svg {
+    height: 0;
+    margin-left: 0;
+    transition: all 300ms ease-in-out;
+    width: 0;
+  }
+  &:hover {
+    svg {
+      fill: #fff;
+      height: 24px;
+      margin-left: 1rem;
+      width: 24px;
+    }
+  }
+}
+
+a.btn.with-icon {
+  justify-content: center;
+}
+
+a.fixed-width,
+button.fixed-width {
+  width: 300px;
+}
+
+.btn-green {
+  background-color: darken($green, 5);
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: $blue;
+  color: #fff;
+}
+
+.btn-orange {
+  background-color: $orange;
+  color: $text-on-white;
+}
+
+/*   BACKGROUND STYLES   */
+
+.background-green {
+  @include bgHypnotize;
+  background-color: darken($green, 16);
+  background-blend-mode: multiply;
+}
+
+.background-blue {
+  @include bgHypnotize;
+  background-color: darken($blue, 10);
+  background-blend-mode: multiply;
+}
+
+.background-orange {
+  @include bgHypnotize;
+  background-color: darken($orange, 5);
+  background-blend-mode: multiply;
+}
+
+.background-white {
+  @include bgHypnotize;
+  background-color: rgba(#fff, 0.5);
+  background-blend-mode: overlay;
+}
+
+.background-grey {
+  @include bgHypnotize;
+  background-color: rgba(#ccc, 0.5);
+  background-blend-mode: multiply;
+}
+
+/*   TABLE STYLES   */
+table,
+tbody,
+tr,
+td {
+  box-sizing: border-box;
+  font-size: 0.85rem;
+}
+
+table {
+  margin: 2rem 0;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  background: #fff;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  tr > td:first-child {
+    color: red;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+/*   TEXT STYLES   */
+blockquote {
+  color: $text-on-white;
+  font-size: $root-font-size;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  word-spacing: 2px;
+}
+
+label {
+  color: $text-on-white;
+  font-size: $small-font-size;
+  font-weight: $font-bold;
+}
+
+.center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: $font-bold;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.text-green {
+  color: $green;
+}
+
+/*   ERROR MESSAGE STYLES   */
+.message {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.message-success {
+  border: 1px solid $green;
+  color: $green;
+}
+
+.message-failure {
+  border: 1px solid $red;
+  color: $red;
+}

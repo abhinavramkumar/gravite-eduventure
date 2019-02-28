@@ -1,0 +1,84 @@
+extends ./src/components/layout.pug
+
+block title
+    | Gravite Eduventure | Downloads
+
+block page
+    - pageIndex = 6
+    - page = "DownloadsPage"
+    - header = page + "__Downloads-Header"
+    - downloadsList = page + "__Downloads-List"
+    - downloadFile = page + "__Download"
+    - downloadFileSize = page + "__Download-Size"
+    - downloadFileDescription = page + "__Download-Description"
+    main#DownloadsPage.Page__Wrapper
+        //- Navbar
+        include ./src/components/navbar.pug
+
+        //- Go To Top
+        include ./src/components/goToTop.pug
+        
+        //- Subheading
+        include ./src/components/subheading.pug
+            block subheading
+                | Downloads
+
+        section(class=page + "__Downloads background-white")
+            .container
+                header(class=header)
+                    h1 Download all your course materials.
+                    p Downloadable Course Materials will be linked here. Remember to check this section for updates.
+                //- h4 Resources
+                .DownloadsPage__Downloads-Body
+                    aside.DownloadsPage__Downloads-Sidebar
+                        ul
+                            li.Downloads-Sidebar__List-Header Boards
+                            li
+                                button(data-id="cbse") CBSE
+                            li
+                                button(data-id="icse") ICSE
+                            li
+                                button(data-id="isc") ISC
+                            li
+                                button(data-id="igcse") IGCSE
+                            li
+                                button(data-id="pu") PU
+                            li
+                                button(data-id="a-level") A-Level
+                            li
+                                button(data-id="ib") IB
+                        ul
+                            li.Downloads-Sidebar__List-Header Competitive
+                            li
+                                button(data-id="jee") JEE
+                            li
+                                button(data-id="neet") NEET
+                            li
+                                button(data-id="kvpy") KVPY
+                            li
+                                button(data-id="ntse") NTSE
+                            li
+                                button(data-id="bitsat") BITSAT
+                            li
+                                button(data-id="srm") SRM
+                            li
+                                button(data-id="viteee") VITEEE
+                            li
+                                button(data-id="manipal") MANIPAL
+                            li
+                                button(data-id="cet") CET
+                            li
+                                button(data-id="comed-k") COMED-K
+                    ul(class=downloadsList)
+                        
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js")
+     
+    script(src="./src/js/common.js")
+    script(src="./src/js/downloads.js")
+
+

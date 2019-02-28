@@ -1,0 +1,129 @@
+.DownloadsPage__Downloads {
+  min-height: calc(100vh - 70px);
+  padding: 70px 0 0;
+}
+
+.DownloadsPage__Downloads-Header {
+  margin: 0 0 2rem;
+  text-align: center;
+  opacity: 0;
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.DownloadsPage__Downloads-Body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.DownloadsPage__Downloads-Sidebar {
+  opacity: 0;
+  flex-basis: 200px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  ul {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    &:nth-child(2) {
+      border-bottom: none;
+    }
+  }
+  li {
+    padding: 0.5rem;
+  }
+  button {
+    font-size: 0.85rem;
+    transition: all 100ms ease-in-out;
+    border-radius: 0;
+    text-align: left;
+    min-width: 50%;
+    border-bottom: 2px solid transparent;
+  }
+  button:hover,
+  button:focus {
+    outline: none;
+    color: $green;
+    border-bottom: 2px solid $green;
+    transform: translateX(5px);
+  }
+  button.active {
+    color: $green;
+    border-bottom: 2px solid $green;
+    transform: translateX(5px);
+  }
+  @include responsive(0, 680px) {
+    flex-basis: 100px;
+    text-align: center;
+  }
+}
+
+.Downloads-Sidebar__List-Header {
+  cursor: initial;
+  padding: 0;
+}
+
+.DownloadsPage__Downloads-List {
+  padding: 2rem;
+  flex-basis: calc(100% - calc(200px + 2rem));
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  opacity: 0;
+  @include responsive(0, 680px) {
+    flex-basis: calc(100% - calc(100px + 2rem));
+  }
+}
+
+.DownloadsPage__Board-Name {
+  h5 {
+    border-bottom: 1px solid $green;
+  }
+}
+
+.DownloadsPage__Download {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0 2rem 1rem;
+  border-bottom: 1px solid $green;
+  a {
+    display: block;
+    max-width: 250px;
+    font-size: 15px;
+    text-transform: none;
+    text-align: left;
+    font-weight: $font-bold;
+    margin-bottom: 0.5rem;
+    color: $green;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    border: 2px solid $green;
+    border-radius: 50%;
+  }
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.DownloadsPage__Download-Description,
+.DownloadsPage__Download-Size {
+  font-size: $small-font-size;
+  line-height: 1.414;
+  margin-bottom: 0.25rem;
+  span {
+    font-weight: bold;
+  }
+}

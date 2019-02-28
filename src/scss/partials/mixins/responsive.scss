@@ -1,0 +1,35 @@
+@mixin responsive($min: 0, $max: 5000) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin desktop-wide {
+  @include responsive(1441px, 3000px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include responsive(1025px, 1440px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include responsive(768px, 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include responsive(480px, 767px) {
+    @content;
+  }
+}
+
+@mixin tiny {
+  @include responsive(240px, 479px) {
+    @content;
+  }
+}

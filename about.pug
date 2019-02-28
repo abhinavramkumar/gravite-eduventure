@@ -1,0 +1,221 @@
+extends ./src/components/layout.pug
+
+block title
+    | About
+
+block page
+    - pageIndex = 1
+    main(class="Page__Wrapper" id="AboutPage")
+
+        //- Navbar
+        include ./src/components/navbar.pug
+
+        //- Go To Top
+        include ./src/components/goToTop.pug
+        
+        //- Subheading
+        include ./src/components/subheading.pug
+            block subheading
+                | About Us
+        
+        //- Landing
+        section.AboutPage__Landing.background-white
+            .container
+                .AboutPage__Landing-Wrapper
+                    header
+                        h3.center.capitalize.text-green The Gravite Story
+                    .AboutPage__Landing-Body
+                        .AboutPage__Landing-Text
+                            p Perhaps the largest factor that determines the course of the future are the 
+                                span.text-green.bold CHOICES 
+                                | that you make. Making the right choice at the right time is all that takes for a brighter future. Gone are the days when learning was confined to books and knowledge to definitions. In this modern age of applied sciences, learning spreads much beyond the realms of classrooms and demands in-depth understanding of happenings around us. In this age of fierce competition, one easily falls for rote learning and compromises on understanding to keep up in the race of scoring high. Scoring and topping your academic generation when combines with logical learning and rational thought process produces what we call academic excellence in the real sense of the word.
+
+                            p Welcome to Gravite Eduventure. A world none like anything you have experienced before. A world where innovation topples experience, understanding precedes facts and logical reasoning aces over set conventions. Here, new ideas bubble out of sheer curiosity and learning is made smart rather than hard. Scores and marks are perceived as a by-product rather than goals. A world where success is a journey rather than a destination. At Gravite, your conventional thought might be twisted, whirled and taken inside out but at the end you will come out brighter, clearer and surer of yourself and the things around you.
+                            p A finished Gravitian is a rational individual laced with the confidence, attitude and intellect to conquer and thrive come what may. With 
+                                span.text-green.bold.capitalize GRAVITE EDUVENTURE
+                                | , you will always be making the 
+                                span.text-green.bold RIGHT CHOICE.
+
+                        .AboutPage__Landing-Image
+                            svg(data-name='Layer 1' viewbox='0 0 781 756')
+                                defs
+                                    lineargradient#a(x1='117' x2='117' y1='238' y2='6.21' gradientunits='userSpaceOnUse')
+                                    stop(stop-color='gray' stop-opacity='.25' offset='0')
+                                    stop(stop-color='gray' stop-opacity='.12' offset='.54')
+                                    stop(stop-color='gray' stop-opacity='.1' offset='1')
+                                    lineargradient#b(x1='385' x2='385' y1='490' y2='258' xlink:href='#a')
+                                    lineargradient#c(x1='385' x2='385' y1='232' y2='.51' xlink:href='#a')
+                                        lineargradient#d(x1='661' x2='661' y1='232' xlink:href='#a')
+                                        lineargradient#e(x1='116' x2='116' y1='483' y2='251' xlink:href='#a')
+                                            lineargradient#f(x1='666' x2='666' y1='495' y2='264' xlink:href='#a')
+                                            lineargradient#g(x1='117' x2='117' y1='743' y2='511' xlink:href='#a')
+                                                lineargradient#h(x1='392' x2='392' y1='756' y2='525' xlink:href='#a')
+                                circle(cx='117' cy='122' r='116' fill='url(#a)' opacity='.5')
+                                circle(cx='117' cy='121' r='113' fill='#f5f5f5')
+                                path(d='M117 235.2a113 113 0 0 0 62.4-18.7c-4.18-22.8-20.1-24.2-20.1-24.2H71.6s-15 1.23-19.7 22.2a113 113 0 0 0 65.1 20.6z' fill='#20a39e')
+                                circle(cx='116' cy='119' r='50.3' fill='#333')
+                                path(d='M98.2 165h35.1v28.1a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5V165h-.01z' opacity='.1')
+                                path(d='M102 163h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5v-24.7a3.35 3.35 0 0 1 3.34-3.35z' fill='#be7c5e')
+                                path(d='M99 178.2a50.5 50.5 0 0 0 35.1.1v-4.31H99z' opacity='.1')
+                                circle(cx='116' cy='130' r='50.3' fill='#be7c5e')
+                                path(d='M86 109.2c.59-2.17 1.33-4.56 3.28-5.69 1.54-.9 3.45-.76 5.23-.67 13.9.76 27.7-2.41 41.2-5.72 7.73-1.89 16-4.19 21-10.4s-1.52-25.8-9.13-28.1c-5-1.53-10.8 1.32-15.5-.92-2.11-1-3.66-2.87-5.48-4.33-3.73-3-8.52-4.21-13.2-5.35-5.42-1.34-11.3-2.65-16.4-.5-4 1.66-6.92 5.17-10.7 7.25-7.21 4-16 2.14-24.3 2.12-2.79 0-6.12.56-7.23 3.12-.75 1.74-.15 3.72-.07 5.61.24 6-4.71 10.7-8.86 15s-8.07 10.5-5.45 15.9c1 2.05 2.83 3.6 3.87 5.63 1.79 3.52.89 7.77 1.54 11.7a29.3 29.3 0 0 0 3.27 8.4c3.08 6 18.6 38.3 25.7 30.1 3.44-4 4-15.6 5.39-20.8q2.88-11.2 5.88-22.3z' fill='#333')
+                                ellipse(cx='80.1' cy='128' rx='4.68' ry='8.77' fill='#be7c5e')
+                                circle(cx='385' cy='374' r='116' fill='url(#b)' opacity='.5')
+                                circle(cx='385' cy='374' r='113' fill='#f5f5f5')
+                                path(d='M386 487.2a113 113 0 0 0 62.3-18.7c-4.18-22.8-20.1-24.2-20.1-24.2h-87.7s-15 1.23-19.7 22.2a113 113 0 0 0 65.2 20.6z' fill='#20a39e')
+                                circle(cx='384' cy='371' r='54.8' fill='#f55f44')
+                                path(d='M367 417h35.1v28.1a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5V417h-.01z' opacity='.1')
+                                path(d='M370 416h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5v-24.7a3.35 3.35 0 0 1 3.35-3.35z' fill='#fda57d')
+                                path(d='M367 430.2a50.5 50.5 0 0 0 35.1.1v-4.31H367z' opacity='.1')
+                                circle(cx='384' cy='382' r='50.3' fill='#fda57d')
+                                g(fill='#f55f44')
+                                    circle(cx='384' cy='315' r='20.2')
+                                    circle(cx='384' cy='296' r='13.3')
+                                    path(d='M376 326.2a20.2 20.2 0 0 1-10.6-25.9c-.14.28-.28.57-.41.86a20.231 20.231 0 1 0 36.9 16.6c.13-.29.25-.58.37-.88a20.2 20.2 0 0 1-26.4 9.33z')
+                                path(d='M349 336.2s21.2 43 81 18l-13.9-21.8-24.7-8.86z' opacity='.1')
+                                path(d='M349 336.2s21.2 43 81 18l-13.9-21.8-24.7-8.86z' fill='#f55f44')
+                                path(d='M365 320.2a250 250 0 0 1 39.2 0s-28.9 2.69-39.2 0z' fill='#333')
+                                path(d='M387 281.2a13.3 13.3 0 0 0-3 .23h.77a13.3 13.3 0 0 1 2 26.3 13.3 13.3 0 0 0 .24-26.6z' fill='#f55f44')
+                                ellipse(cx='334' cy='382' rx='4.68' ry='8.77' fill='#fda57d')
+                                ellipse(cx='434' cy='382' rx='4.68' ry='8.77' fill='#fda57d')
+                                path(fill='#f55f44' d='M345 337l10-5 2 8-6 4z')
+                                circle(cx='385' cy='116' r='116' fill='url(#c)' opacity='.5')
+                                circle(cx='385' cy='116' r='113' fill='#f5f5f5')
+                                path(d='M341 117.2s-12.9 63.4-19.9 59.8c0 0 67.7 58.5 127 0 0 0-10.5-44.6-25.7-59.8z' fill='#333')
+                                path(d='M386 229.2a113 113 0 0 0 62.4-18.7c-4.18-22.8-20.1-24.2-20.1-24.2h-87.7s-15 1.23-19.7 22.2a113 113 0 0 0 65.2 20.6z' fill='#20a39e')
+                                circle(cx='384' cy='113' r='50.3' fill='#333')
+                                path(d='M366 159h35.1v28.1a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5V159h-.04z' opacity='.1')
+                                path(d='M370 158h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5v-24.7a3.35 3.35 0 0 1 3.31-3.34z' fill='#be7c5e')
+                                path(d='M367 172.2a50.5 50.5 0 0 0 35.1.1v-4.31H367z' opacity='.1')
+                                circle(cx='384' cy='124' r='50.3' fill='#be7c5e')
+                                path(d='M336 105.2h95.9s-8.19-38.7-44.4-36.2-51.5 36.2-51.5 36.2z' fill='#333')
+                                ellipse(cx='335' cy='122' rx='4.68' ry='8.77' fill='#be7c5e')
+                                ellipse(cx='433' cy='122' rx='4.68' ry='8.77' fill='#be7c5e')
+                                path(d='M336 106.2h95.9s-8.19-38.7-44.4-36.2-51.5 36.2-51.5 36.2z' opacity='.1')
+                                circle(cx='661' cy='116' r='116' fill='url(#d)' opacity='.5')
+                                circle(cx='661' cy='115' r='113' fill='#f5f5f5')
+                                path(d='M662 229.2a113 113 0 0 0 62.4-18.7c-4.19-22.8-20.1-24.2-20.1-24.2h-87.7s-15 1.23-19.7 22.2a113 113 0 0 0 65.1 20.6z' fill='#20a39e')
+                                circle(cx='660' cy='113' r='54.8' fill='#72351c')
+                                path(d='M643 158h35.1v28.1a17.5 17.5 0 0 1-17.5 17.6 17.5 17.5 0 0 1-17.5-17.5v-28.1h-.01z' opacity='.1')
+                                path(d='M646 157h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5v-24.7a3.35 3.35 0 0 1 3.35-3.35z' fill='#fda57d')
+                                path(d='M643 171.2a50.5 50.5 0 0 0 35.1.1v-4.31H643z' opacity='.1')
+                                circle(cx='660' cy='124' r='50.3' fill='#fda57d')
+                                path(d='M625 78.2s21.2 43 81 18l-13.9-21.8-24.7-8.86z' opacity='.1')
+                                g(fill='#72351c')
+                                    path(d='M625 77.2s21.2 43 81 18l-13.9-21.8-24.7-8.86z')
+                                    path(d='M625 74.2a29 29 0 0 1 7.2-11.7c9.89-9.78 26.1-11.8 34.4-23a6.51 6.51 0 0 1-3 9.18c8-.05 17.2-.75 21.7-7.31a14.9 14.9 0 0 1-2.51 15.7c7.06.32 14.6 5.11 15.1 12.2.3 4.7-2.64 9.15-6.51 11.8s-8.53 3.91-13.1 4.91c-13.4 3-62 15.4-53.2-11.8zM711 124.2h-1.33l-25.9 23.1c-25-11.7-43.3 0-43.3 0l-27.2-22.1-2.74.34a50.504 50.504 0 0 0 101-1.29zm-50.4 32c-9.78 0-17.7-2-17.7-4.43s7.93-4.43 17.7-4.43 17.7 2 17.7 4.43-7.93 4.43-17.7 4.43z')
+                                ellipse(cx='610' cy='124' rx='4.68' ry='8.77' fill='#fda57d')
+                                ellipse(cx='711' cy='124' rx='4.68' ry='8.77' fill='#fda57d')
+                                circle(cx='116' cy='367' r='116' fill='url(#e)' opacity='.5')
+                                circle(cx='116' cy='366' r='113' fill='#f5f5f5')
+                                path(d='M116 480.2a113 113 0 0 0 62.4-18.7c-4.18-22.8-20.1-24.2-20.1-24.2H70.5s-15 1.23-19.7 22.2a113 113 0 0 0 65.2 20.6z' fill='#20a39e')
+                                circle(cx='115' cy='364' r='54.8' fill='#333')
+                                path(d='M97.3 409h35.1v28.1a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5V409h-.01z' opacity='.1')
+                                path(d='M101 408h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.6-17.5v-24.8a3.35 3.35 0 0 1 3.35-3.35z' fill='#fdb797')
+                                path(d='M98 422.2a50.5 50.5 0 0 0 35.1.1v-4.34H98z' opacity='.1')
+                                circle(cx='115' cy='375' r='50.3' fill='#fdb797')
+                                path(d='M79 329.2s21.2 43 81 18l-13.9-21.8-24.7-8.86z' opacity='.1')
+                                path(d='M79 328.2s21.2 43 81 18l-13.9-21.8-24.7-8.86z' fill='#333')
+                                path(d='M79 325.2a29 29 0 0 1 7.2-11.7c9.89-9.78 26.1-11.8 34.4-23a6.51 6.51 0 0 1-3 9.18c8-.05 17.2-.75 21.7-7.31a14.9 14.9 0 0 1-2.51 15.7c7.06.32 14.6 5.11 15.1 12.2.3 4.7-2.64 9.15-6.51 11.8s-8.54 3.93-13.1 4.95c-13.4 2.98-62 15.4-53.2-11.9z' fill='#333')
+                                ellipse(cx='64.7' cy='374' rx='4.68' ry='8.77' fill='#fdb797')
+                                ellipse(cx='165' cy='374' rx='4.68' ry='8.77' fill='#fdb797')
+                                circle(cx='666' cy='380' r='116' fill='url(#f)' opacity='.5')
+                                circle(cx='666' cy='379' r='113' fill='#f5f5f5')
+                                path(d='M666 493.2a113 113 0 0 0 62.4-18.7c-4.18-22.8-20.1-24.2-20.1-24.2h-87.7s-15 1.23-19.7 22.2a113 113 0 0 0 65.2 20.6z' fill='#20a39e')
+                                path(d='M647 422h35.1v28.1a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.6-17.5V422z' opacity='.1')
+                                path(d='M650 421h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.6-17.5v-24.7A3.35 3.35 0 0 1 650 421z' fill='#fdb797')
+                                path(d='M647 435.2a50.5 50.5 0 0 0 35.1.1v-4.31H647z' opacity='.1')
+                                g(fill='#fdb797')
+                                    circle(cx='665' cy='387' r='50.3')
+                                    ellipse(cx='615' cy='385' rx='4.68' ry='8.77')
+                                    ellipse(cx='714' cy='385' rx='4.68' ry='8.77')
+                                g(fill='none' stroke='#333' stroke-miterlimit='10' stroke-width='2')
+                                    rect(x='634' y='388' width='21.5' height='10.8' rx='4.35' ry='4.35')
+                                    rect(transform='rotate(180 789 429)' x='883' y='459' width='21.5' height='10.8' rx='4.35' ry='4.35')
+                                    path(d='M655 388.2s6.82-3.7 19.5 0')
+                                path(d='M700 351.2l12.3 28.7s15.1-19-12.3-28.7z' fill='#858585')
+                                path(fill='none' stroke='#333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M695 393l19-16')
+                                path(d='M630 351.2l-12.3 28.7s-15.1-19 12.3-28.7z' fill='#858585')
+                                path(fill='none' stroke='#333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M634 393l-19-16')
+                                circle(cx='117' cy='627' r='116' fill='url(#g)' opacity='.5')
+                                circle(cx='117' cy='627' r='113' fill='#f5f5f5')
+                                path(d='M180 637.2c0 41.8-27.3 88.3-60.9 88.3S58.2 679 58.2 637.2s27.3-63 60.9-63 60.9 21.2 60.9 63z' fill='#fdd835')
+                                path(d='M117 740.2a113 113 0 0 0 62.4-18.7c-4.18-22.8-20.1-24.2-20.1-24.2H71.6s-15 1.23-19.7 22.2a113 113 0 0 0 65.1 20.6z' fill='#20a39e')
+                                path(d='M98.2 670h35.1v28.1a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5V670h-.01z' opacity='.1')
+                                path(d='M102 668h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.5 17.5 17.5 17.5 0 0 1-17.5-17.5v-24.7a3.35 3.35 0 0 1 3.34-3.35z' fill='#fdb797')
+                                path(d='M99 683.2a50.5 50.5 0 0 0 35.1.1v-4.31H99z' opacity='.1')
+                                g(fill='#fdb797')
+                                    circle(cx='116' cy='635' r='50.3')
+                                    ellipse(cx='66.6' cy='633' rx='4.68' ry='8.77')
+                                    ellipse(cx='165' cy='633' rx='4.68' ry='8.77')
+                                path(d='M72 608.2s28.4 38.9 93.6 25.6c0 0 7.28-8.86-10.4-36.1S88.1 574.9 72 608.1z' opacity='.1')
+                                path(d='M72 607.2s28.4 38.9 93.6 25.6c0 0 7.28-8.86-10.4-36.1S88.1 573.9 72 607.1z' fill='#fdd835')
+                                circle(cx='392' cy='641' r='116' fill='url(#h)' opacity='.5')
+                                circle(cx='392' cy='640' r='113' fill='#f5f5f5')
+                                path(d='M455 651.2c0 37.7-27.1 56.3-62.3 56.3s-65.2-18.6-65.2-56.3 28.5-68.3 63.7-68.3 63.7 30.6 63.7 68.3z' fill='#333')
+                                path(d='M393 753.2a113 113 0 0 0 62.4-18.7c-4.18-22.8-20.1-24.2-20.1-24.2h-87.7s-15 1.23-19.7 22.2a113 113 0 0 0 65.1 20.6z' fill='#20a39e')
+                                path(d='M373 683h35.1v28.1a17.5 17.5 0 0 1-17.6 17.6 17.5 17.5 0 0 1-17.5-17.5v-28.1h.03z' opacity='.1')
+                                path(d='M377 682h28.4a3.35 3.35 0 0 1 3.35 3.35v24.7a17.5 17.5 0 0 1-17.6 17.5 17.5 17.5 0 0 1-17.5-17.5v-24.7A3.35 3.35 0 0 1 377 682z' fill='#fda57d')
+                                path(d='M374 696.2a50.5 50.5 0 0 0 35.1.1v-4.31H374z' opacity='.1')
+                                circle(cx='391' cy='648' r='50.3' fill='#fda57d')
+                                path(d='M333 651.2s31.3-3.8 55-34.2c0 0 31.3 34.5 53.1 30.7 0 0 12.6-13.3 0-26.6s-22.5-30-39.2-27.8-37.3 3.16-46.2 11.1-22.7 46.8-22.7 46.8z' opacity='.1')
+                                path(d='M333 651.2s31.3-3.8 55-34.2c0 0 31.3 34.5 53.1 30.7 0 0 12.6-13.3 0-26.6s-22.5-30-39.2-27.8-37.3 3.12-46.1 11.1-22.8 46.8-22.8 46.8z' fill='#333')
+                                ellipse(cx='341' cy='648' rx='4.68' ry='8.77' fill='#fda57d')
+                                ellipse(cx='441' cy='648' rx='4.68' ry='8.77' fill='#fda57d')
+
+                        
+
+        //- Out Team
+        section.AboutPage__Team.background-grey#AboutPage__Team
+            .container
+                .AboutPage__Team-Container
+                    header
+                        h3.center.capitalize.text-green Our Tutors
+                    .AboutPage__Team-List
+                        .AboutPage__Team-Member
+                            .AboutPage__Team-Member-Image
+                                img(src='./src/images/teachers/teacher-2.png' title="Manmeet" alt='')
+                            .AboutPage__Team-Member-Detail
+                                p Manmeet
+
+                        .AboutPage__Team-Member
+                            .AboutPage__Team-Member-Image
+                                img(src='./src/images/teachers/teacher-3.png' title="Nitesh" alt='')
+                            .AboutPage__Team-Member-Detail
+                                p Nitesh
+
+                        .AboutPage__Team-Member
+                            .AboutPage__Team-Member-Image
+                                img(src='./src/images/teachers/teacher-4.png' title="Shivam" alt='')
+                            .AboutPage__Team-Member-Detail
+                                p Shivam
+
+                        .AboutPage__Team-Member
+                            .AboutPage__Team-Member-Image
+                                img(src='./src/images/teachers/teacher-5.png' title="Sudeshna" alt='')
+                            .AboutPage__Team-Member-Detail
+                                p Sudeshna
+
+                        .AboutPage__Team-Member
+                            .AboutPage__Team-Member-Image
+                                img(src='./src/images/teachers/teacher-6.png' title="Sugandha" alt='')
+                            .AboutPage__Team-Member-Detail
+                                p Sugandha
+
+                        .AboutPage__Team-Member
+                            .AboutPage__Team-Member-Image
+                                img(src='./src/images/teachers/teacher-7.png' title="Vikram" alt='')
+                            .AboutPage__Team-Member-Detail
+                                p Vikram
+            
+        include ./src/components/cta.pug
+
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js")
+     
+    script(src="./src/js/common.js")
+    script(src="./src/js/about.js")

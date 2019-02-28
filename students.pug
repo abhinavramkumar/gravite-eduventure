@@ -1,0 +1,244 @@
+extends ./src/components/layout.pug
+
+block title
+    | Gravite Eduventure | Students Zone
+
+block page
+    - pageIndex = 4
+    main#StudentsPage.Page__Wrapper
+        //- Navbar
+        include ./src/components/navbar.pug
+
+        //- GoToTop
+        include ./src/components/goToTop.pug
+        //- Subheading
+        include ./src/components/subheading.pug
+
+            block subheading
+                | Students Zone
+        
+        section.StudentsPage__Landing.background-white
+            .container
+                .StudentsPage__Landing-Text
+                    header
+                        h3.text-green.center How can we help?
+                    p Teachers spend years honing and mastering their craft. It takes them years of sweat and toil to master their expertise. Children need to understand concepts in simple yet effective way and that is what we can provide. 
+                    p We make an effort to understand your child and customize lessons in best possible ways for your child to understand better. 
+                    p Lessons are conducted in small class size so that the teachers can optimize personalized attention for individual students. We make an extra effort to spend more hours with students who have difficulty understanding the subjects. We give regular inputs to parents, so at home you will be able to help your child even better.
+        section.background-white.StudentsPage__Testimonials#Students-Testimonials
+            .container
+                .StudentsPage__Testimonials-Wrapper
+                    header
+                        h3.center.capitalize.text-green Testimonials
+                    .StudentsPage__Testimonials-Body
+                        .StudentsPage__Testimonials-List
+
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has moulded me into what I am and what I write in my test papers today. It has been extremely helpful, beginning from the crash courses to the everyday classes, every moment has been very fruitful and has helped me develop my understanding in each subject I enrolled here to a great extent (Math, JAVA, Physics, Chemistry, Biology). The faculty is brilliant and the regular tests evaluate us to show us our mistakes. It is one of a kind tutorial with the best of …..everything !
+                                    p.StudentsPage__Testimonial-Name
+                                        | Nazneen Ahmed 
+                                    p.StudentsPage__Testimonial-Details
+                                        | X-Ryan International - (Awarded the MATH WHIZ KID AWARD at school)
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/boy.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has been second home to me. It has helped me improve in my academics a lot all the teacher are amazing and have taught me a lot, they have helped me in each and every situation. The Chemistry teacher is great and has helped me in each and every topic. The Math teacher Vijay Giri Sir has been amazing and helped me in Maths a lot, he has helped me develop an interest towards the subject. The Physics teacher has helped me clear every concept, Biology teacher has also been amazing. Also Gravite Eduventure has molded me into a perfect student in academics.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Uday Chandra Mohan  
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- HAL GnanJyothi School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has been very helpful. The Crash Course has helped me very much. The morning extra Math classes are very helpful, making me finish a little Math every day. Chemistry has become very easy for me now. Ms. Gurpreet has helped me voluntarily in Geography. Giri sir is an amazing Math teacher, and he has helped me with all doubts at any time. Thanks to Pankaj sir I don’t hate Computer Applications anymore, and I have more confidence in my programming skills now. Soumya Ma’am has helped me to understand Chemistry a lot better, & now Chemistry has turned from my most dreaded subject to my most favorite subject. Carlos sir is a very good teacher. One-on-one extra classes with him were extremely helpful. Gravite Eduventure have been a wonderful experience for me & I know I’ll do well in my boards due to the teachings of the teachers. I would like to thank all the teachers.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Tanisha Mallya 
+                                    p.StudentsPage__Testimonial-Details
+                                        | X - Ryan International School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-3.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has helped me a lot. It has helped me to understand the concepts better. The teachers are good, they are supportive, clear all my doubts. They hold tests very frequently which helps build our confidence.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Rhea Surena 
+                                    p.StudentsPage__Testimonial-Details
+                                        | X – Vibgyor High School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure is a wonderful institute, which has helped me immensely in becoming more confident in subjects I once dreaded. The teachers are excellent and class is something I look forward to as it is both educational and extremely fun. I don’t know what I would have done without tuitions this year.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Ishita
+                                    p.StudentsPage__Testimonial-Details
+                                        | X - Greenwood High
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/boy.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote I joined Gravite Eduventure tutorial in the 9th standard. It has helped me derive away my exam fear because of the repetitive tests to help me understand, I stand with my subjects. It gives me confidence in the subjects, I felt I was weak at and the teachers here are amazing.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Rahul
+                                    p.StudentsPage__Testimonial-Details
+                                        | X -Bishop Cotton Boy’s School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-3.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure is an amazing institute that has helped me in the subject that I feared the most. I joined here in 9th grade as a math student. I was not very good at math or physics but the frequent tests, quick revision, simple explanations and practice have made me improve me in math and physics. My chemistry was decent but not too great, but the teachers have helped me improve. Overall, these classes have helped me broaden the scope for my field of study.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Amogh
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Bethany High School
+
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote My experience in PST was amazing. The best part of being a student of PST was fun learning concepts as the teachers here are very fun to learn with. The Crash Course was very good and I had a lot of fun attending it and I truly miss those days of Crash Course. PST has helped me a lot in improving in my Academics, but learning here was the most fun part not only because of the friendly natured teachers, but also because of my tuition mates. I will really miss coming to PST and learning the frequent tests conducted, tests forced us to study and therefore made our concepts clear. The special morning classes before exams were one of a kind and I enjoyed coming to the morning classes as it kept me concentrated. The teachers here are just awesome as they make the environment very comfortable. I look forward every day to come to the tuitions because it was very much fun learning. I am really going to miss PST and I’m really going to miss coming here and having fun learning here. I hope that I’ll express my gratitude by getting very good marks in the Board exams. I hope PST remains here forever and succeeds in everything it does. I’m going to miss my experiences in PST. Thank you so much!
+                                    p.StudentsPage__Testimonial-Name
+                                        | Gouri S. Moghe
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Ryan International School
+
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-3.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote My PST journey was a very Educational and enriching journey. I learned the true power of smart studying. The frequent tests conducted really helped as it really forced us to study. My marks have substantially increased since joining PST. Also, as throughout the whole year we studied the chapters over and over again now I’m finding it really easy to prepare for the boards. The Crash Course was truly amazing as during t school year, I was able to keep up with relative ease. The teachers are very helpful and friendly and are very efficient in teaching. They also provide a stress-free environment for our maximum concentration. The teachers are ready to help if we have any doubts. I am truly grateful for all that PST has done for me. I can repay by passing the boards with flying colors. I shall never forget my PST experiences.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Sneha Zakkir
+                                    p.StudentsPage__Testimonial-Details
+                                        | X-Ryan International School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/boy.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has been very helpful. In the beginning I had to drag myself to the classes but as I got to know the teachers, I felt better and henceforth did not have to be forced. The remarkable experience in Gravite Eduventure will remain with me as memories. Ever since I had begun coming to Gravite Eduventure my grades have come up drastically. The thought of leaving Gravite Eduventure still haunts me today. I hope to come back in the future as they have played an important role in shaping of my future. I am going to miss the teachers and my friends a lot.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Harimadhav S
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Gopalan National School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/boy.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has really helped me in my Academics. Even though I had only taken Math and Physics, it has really helped me improve and understand these subjects very well. Vijay Giri Sir has been a great help to me and hats off to him!! I have also received a great deal of individual attention from all the teachers. Thank you PST !!!
+                                    p.StudentsPage__Testimonial-Name
+                                        | Kevin D
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Bishop’s Cotton Boys School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/boy.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Whatever I am in field of studies today is because of my mother and my Gravite Eduventure Teachers, Mr. Giri, Mr. Carlos and Mrs. Soumya along with Mrs. Manmeet. I joined Gravite Eduventure after my Term I results were out. I performed horribly. When I first came to the center, I was very shy and lonely but then, Math Sir, he was the one who treated me just like my father and because of him I started making friends. I have always liked coming for tuitions because of this awesome place where teachers never taught us like the typical strict teachers…they were always very caring and loving. Because of them, students have the feeling of a home away from home. Gravite Eduventure was like my third home, first my home; second my school and third Gravite Eduventure. With time, I made everyone in the tenth ICSE Batch my friends and my grade improved drastically too! In Pre-board Math – 71/80, Physics – 71/80 and Chemistry 67/80 and hope to score much better in my boards! In PST I have made some friends whose bond of friendship with me cannot be broken. Some of them are Hari, Rhea, Rohan, Sona, Muskan, Kartik and many more…….. PST gave the hope of trying to achieve 90% above in my board exams. Before, I had hopes of just 75% to 70%. I’m really very sad now that almost one year long journey is ending in another week, I’ll always cherish these memories, especially Carlos sir – Newton’s III Law, Giri sirs ‘Chathri!” , Soumya madam’s beautiful laugh and Manmeet Mams Inspirational short speeches! I’ll miss Gravite Eduventure a lot and all the teachers & friends. It’s not just a tuition center for me where I have to come on particular days for classes; it is a part of my life. Thank you Gravite Eduventure! Thank you Teachers!
+                                    p.StudentsPage__Testimonial-Name
+                                        | Prabhav Srivastava
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Bishops Cotton School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure is pretty helpful. I enjoyed attending the tuitions. A major role was that of the courteous and loving teachers. Apart from that, there was steady improvement in my confidence and hence in my academic performance. I am very grateful for everything about PST. One of my best experiences was that I had carried books to the center and I found that there was a children’s day celebration is going on! So that proves that this wasn’t just a hub of knowledge but also fun. Finding so many classmates and making newer friends will be the one of the greatest memories I will miss. Special shootout to Giri sir and Carlos Sirfor running behind me for my board exams. Thank you. I enjoyed my experience.
+                                    p.StudentsPage__Testimonial-Name
+                                        | NitiTeli
+                                    p.StudentsPage__Testimonial-Details
+                                        | X-Ryan International School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-3.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Thank you for giving us fond class memories which we will cherish always. • Improved our confidence, strive towards achieving our dream. • They have been really supportive and worked with systematic approach and helped us improve. • Helped us to use our vacations productively. Taught us how to balance our work. • Thank you for being one such amazing group who will live on forever on minds and hearts of students. • Will never forget this place forever. The best place any 10th grade can be placed in. • Crash course and extra Morning classes have helped us. • Questions papers provided helpedus improve and become perfect in every subject. • The experiences we’ve had, lessons we’ve learnt have left an imprint in our hearts that we will cherish always. • We will be grateful forever! • Thank you!
+                                    p.StudentsPage__Testimonial-Name
+                                        | Sinduja P
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Gopalan National School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote PST is not just a tuition center, it is far more than that. It’s like a second school, a family. Here every student’s every problem is taken care of. When I first joined I didn’t enjoy studies at all. It took me hours to understand and learn one concept. However PST changed that. The teachers are kind, caring and considerate. They take out time to sit with every student and focus on their individual problems with patience. Even while sitting in a class full of students, everybody is given equal importance. Soon I found that I actually started enjoying the subjects. I understood far more and my marks increased, along with my confidence. The environment is inviting and comfortable, nobody feels left out, and learning is fun. Studying at PST truly was wonderful experience for me.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Muskaan Chaturvedi
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Gopalan National School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure is a wonderful institute , which has helped me immensely in becoming more confident in subjects I once dreaded. The teachers are excellent and class is something I look forward to as it is both educational and extremely fun. I don’t know what I would have done without tuitions this year.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Ishita
+                                    p.StudentsPage__Testimonial-Details
+                                        | X - Greenwood high
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/boy.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has allowed me to look forward to writing exams which everyone usually fears.My outlook towards these subjects has completely changed, thanks to the excellent tutors, which focus on your basic instead of directly skipping to hard problems. Moreover, PST tuitions are something enjoyable and fun for everyone. Thank you Gravite Eduventure.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Nishan
+                                    p.StudentsPage__Testimonial-Details
+                                        | X – Gopalan National School
+                            
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote Gravite Eduventure has been extremely helpful and has boosted my confident. From the beginning of the crash course to the everyday classes, test and revisions. It has help me understand the subjects better and approach and analyze the paper in a better manner.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Prarthana
+                                    p.StudentsPage__Testimonial-Details
+                                        | X -Gopalan National School
+
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote PST was very helpful. Math teaching here is very good and has helped me increase my scores. • The extra morning classes have helped all of us very much during exams. • It is the best place where I joined. • All the subject teachers were very supportive and helped us increase our confidence and taught us many ways to balance our work. • Crash course helped us in making some concepts clear before regular school started. • The revisions during boards helped me in increasing my confidence. • The question papers booklets and the question papers were very effective., • I will be grateful to PST forever.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Varsha
+                                    p.StudentsPage__Testimonial-Details
+                                        | X - Ryan International School
+
+                            .StudentsPage__Testimonial
+                                .StudentsPage__Testimonial-Image
+                                    img(src="./src/images/icons/girl-2.svg")
+                                .StudentsPage__Testimonial-Text
+                                    blockquote PST was very helpful. The teachers supported us and helped us improve in Academics. They boosted our confidence and taught us many ways to balance our work. The crash course helped in making some of the concepts clear before the school year started. The revisions at the end of the year made us completely through with our syllabus. We’ll be grateful to you forever.
+                                    p.StudentsPage__Testimonial-Name
+                                        | Sukeerthi Adi
+                                    p.StudentsPage__Testimonial-Details
+                                        | X- Gopalan National School
+        include ./src/components/cta.pug
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js")
+     
+    script(src="./src/js/common.js")
+    script(src="./src/js/students.js")

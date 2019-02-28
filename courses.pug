@@ -1,0 +1,434 @@
+extends ./src/components/layout.pug
+
+block title
+    | Gravite Eduventure | Courses
+
+block page
+    - pageIndex = 2
+    main#CoursesPage.Page__Wrapper
+        //- Navbar
+        include ./src/components/navbar.pug
+
+        //- Go To Top
+        include ./src/components/goToTop.pug
+        
+        //- Subheading
+        include ./src/components/subheading.pug
+            block subheading
+                | Courses
+        
+        section.CoursePage__Page-Content
+            .container
+                header.CoursePage__Page-Header
+                    h1 We offer 3 major categories, each of which have specialized courses within them.
+                .CoursePage__Page-Content-Wrapper
+                    aside.CoursesPage__Sidebar
+                        ul.CoursesPage__Sidebar-List
+                            li.CoursesPage__Sidebar-List_Item
+                                button.active(data-target="board") Board Exams
+                            li.CoursesPage__Sidebar-List_Item
+                                button(data-target="competitive") Competitive Exams
+                            li.CoursesPage__Sidebar-List_Item
+                                button(data-target="college") Entrance Exams
+                    div.CoursesPage__Body
+                        article(data-src="board").CoursePage__Section.CoursesPage__Boards
+                            header.CoursePage__Section-Header
+                                h3 Board Exams
+                            .CoursesPage__Section-Body.CoursesPage__Boards-Body
+                                p This course is specially designed for board exam preparation. Here we focus more on explanation of concepts , practice  and way to write answer as per board guidance.
+                                p The boards that we cover are ICSE, CBSE, IGCSE, IB, ISC, PUC, STATE
+                                
+                        article(data-src="competitive").CoursePage__Section.CoursesPage__Competitive
+                            header.CoursePage__Section-Header
+                                h3 Competitive Exams
+                            .CoursesPage__Section-Body.CoursesPage__Competitive-Body
+                                p This course is specially designed for board exam preparation. Here we focus more on explanation of concepts , practice  and way to write answer as per board guidance.
+                                ul.CoursesPage__Competitive-Courses-List
+                                    //- BULLS EYE
+                                    li.CoursesPage__Competitive-Course
+                                        h4.CoursesPage__Competitive-Course__Title Bull's Eye (For Class XIIth)
+                                        img(src="./src/images/courses/Bulls Eye.jpg", alt="bull's eye")
+                                        p This is an integrated program designed for class 12th students.It includes IIT JEE / NEET preperation, Board exam preperation and KVPY preparation.
+                                        p The Course intends to give students, who aspire to crack through top- Engineering /Medical Institutes, an opportunity to enhance their problem solving skills and command over concept to utmost level.
+                                        p This course is available for class XI and class XII appearing students. Gravite will not only prepare studnets for top-entrance exams, but also for Board exam and CET exam in this course.
+                                        button More Details
+                                        .CoursesPage__Competitive-Course__Details
+                                            .CoursesPage__Competitive-Course__Table-Wrapper
+                                                table.table.CoursesPage__Competitive-Course__Table
+                                                    tbody.table__body
+                                                        tr.table__row
+                                                            td.table__column-title Target
+                                                            td.table__column-data 2019
+                                                        tr.table__row
+                                                            td Class
+                                                            td XII
+                                                        tr.table__row
+                                                            td  Course Name
+                                                            td Bull's Eye
+                                                        tr.table__row
+                                                            td Course Code
+                                                            td BE
+                                                        tr.table__row
+                                                            td Eligibility
+                                                            td Class XII appearing students
+                                                        tr.table__row
+                                                            td Who Should Join
+                                                            td Class XII appearing students with strong desire to excell in all competitive exams.
+                                                        tr.table__row
+                                                            td Medium of Studies
+                                                            td English
+                                                        tr.table__row
+                                                            td Course Availability
+                                                            td At Gravite Tutorial, New thippasandra, Bangalore
+                                                        tr.table__row
+                                                            td Course Commencement
+                                                            td April, 2019
+                                                        tr.table__row
+                                                            td Course Ends
+                                                            td Till the completion of IIT JEE Mains Exams
+                                                        tr.table__row
+                                                            td Course Duration
+                                                            td 52 Weeks
+                                                        tr.table__row
+                                                            td Admission Process
+                                                            td Contact Admin of Gravite Tutorials(Selection Test)
+                                            
+                                            .CoursesPage__Competitive-Course__Details-Text
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Structure
+                                                    h5 Course Structure
+                                                    p This Course covers the entire IIT-JEE syllabus of Class – XI and XII. The idea behind this course is to make a student learn elementary and important topics of IIT JEE/ CET curriculam. First Board syllabus is covered on priority then required skills for other competitive exams is given to students. Regular periodic tests are conducted to evaluate the learning of student at Gravite. On the basis of students’ performance in these tests they are reshuffled in order to boost their morale and sprite up the vigor in them.
+                                                
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Content
+                                                    h5 Course Content:
+                                                    ol
+                                                        li Regular Classroom Coaching
+                                                        li 90 minutes lecture which is further divided into DPP discussion of 15 min, Sheet Discussion of next 30 minutes & theoretical and conceptual learning of last 45 minutes.
+                                                        li lectures per subject per week
+                                                        li Total 270 lectures in entire course.
+                                                        li Approximately 450 hours of Classroom Teaching.
+                                                        li Periodic Test is conducted once in a month in the form of Part Test & Cumulative Test.
+                                                        li Regular conduction of Doubt Classes.
+
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Features
+                                                    h5 Distinctive Features:
+                                                    ol
+                                                        li Systematic completion of whole syllabus of IIT-JEE in one year.
+                                                        li These Courses help in developing a good understanding of basic concepts, logical and methodological approach towards problem solving ability.
+                                                        li Provide knowledge of highest level related to fundamentals and concepts, best possible guidance, speed, accuracy, balanced evaluation of performance on periodic basis, test temperament and right kind of competition.
+                                                        li Conduction of JPTs & APTs give the feel of actual examination to the students.
+                                                        li The Test Series comes out helpful in maintaining level of IIT-JEE preparation even after completion of Course.
+
+                                    //- NUCLEUS
+                                    li.CoursesPage__Competitive-Course
+                                        h4.CoursesPage__Competitive-Course__Title Nucleus (For Class XIth)
+                                        img(src="./src/images/courses/Nucleus.jpg", alt="Nucleus")
+                                        p This is an integrated program designed for class 11th students. It includes IIT JEE / NEET preperation, Board exam preperation and KVPY preparation.
+                                        p The Course intends to give students, who aspire to crack through top state Engineering/Medical Institutes, an opportunity to enhance their problem solving skills and command over concept to utmost level.
+                                        p Gravite will not only prepare studnets for top state engineering/Medical entrance exams, but also for Board exam in this course
+                                        button More Details
+                                        .CoursesPage__Competitive-Course__Details
+                                            .CoursesPage__Competitive-Course__Table-Wrapper
+                                                table.table.CoursesPage__Competitive-Course__Table
+                                                    tbody.table__body
+                                                        tr.table__row
+                                                            td.table__column-title Target
+                                                            td.table__column-data 2019
+                                                        tr.table__row
+                                                            td Class
+                                                            td XI
+                                                        tr.table__row
+                                                            td  Course Name
+                                                            td Nucleus
+                                                        tr.table__row
+                                                            td Course Code
+                                                            td BE
+                                                        tr.table__row
+                                                            td Eligibility
+                                                            td Class XI appearing students
+                                                        tr.table__row
+                                                            td Who Should Join
+                                                            td Class XI appearing students with strong desire to excell in all competitive exams.
+                                                        tr.table__row
+                                                            td Medium of Studies
+                                                            td English
+                                                        tr.table__row
+                                                            td Course Availability
+                                                            td At Gravite Tutorial, New thippasandra, Bangalore
+                                                        tr.table__row
+                                                            td Course Commencement
+                                                            td May, 2019
+                                                        tr.table__row
+                                                            td Course Ends
+                                                            td Till the completion of IIT JEE Mains Exams
+                                                        tr.table__row
+                                                            td Course Duration
+                                                            td 52 Weeks
+                                                        tr.table__row
+                                                            td Admission Process
+                                                            td Contact Admin of Gravite Tutorials(Selection Test)
+                                            
+                                            .CoursesPage__Competitive-Course__Details-Text
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Structure
+                                                    h5 Course Structure
+                                                    p This Course covers the entire CET syllabus of Class XI and XII. The idea behind this course is to make a student learn elementary and important topics of CET curriculam. First Board syllabus is covered on priority then required skills for other competitive exams is given to students. Regular periodic tests are conducted to evaluate the learning of student at Gravite. On the basis of students’ performance in these tests they are reshuffled in order to boost their morale and sprite up the vigor in them.
+                                                
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Content
+                                                    h5 Course Content:
+                                                    ol
+                                                        li Regular Classroom Coaching
+                                                        li 90 minutes lecture which is further divided into DPP discussion of 15 min, Sheet Discussion of next 30 minutes & theoretical and conceptual learning of last 45 minutes.
+                                                        li lectures per subject per week
+                                                        li Total 270 lectures in entire course.
+                                                        li Approximately 450 hours of Classroom Teaching.
+                                                        li Periodic Test is conducted once in a month in the form of Part Test & Cumulative Test.
+                                                        li Regular conduction of Doubt Classes.
+
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Features
+                                                    h5 Distinctive Features:
+                                                    ol
+                                                        li Systematic completion of whole syllabus of CET in one year.
+                                                        li These Courses help in developing a good understanding of basic concepts, logical and methodological approach towards problem solving ability.
+                                                        li Provide knowledge of highest level related to fundamentals and concepts, best possible guidance, speed, accuracy, balanced evaluation of performance on periodic basis, test temperament and right kind of competition.
+                                                        li Conduction of JPTs & APTs give the feel of actual examination to the students.
+                                                        li The Test Series comes out helpful in maintaining level of CET preparation even after completion of Course.
+
+                                    //- CET CRASH
+                                    li.CoursesPage__Competitive-Course
+                                        h4.CoursesPage__Competitive-Course__Title CET Crash (Class XIIth - After Board Exam - for CBSE/ISC/PUC Board)
+                                        img(src="./src/images/courses/Bulls Eye.jpg", alt="CET")
+                                        p This is an integrated program designed for class 12th students.
+                                        p The Crash Course intends to give students an opportunity to benchmark their performance against the large number of student preparing for NEET and CET Exam.
+                                        p It includes a set of 6 Full Mock Tests as per NEET and CET Exam pattern and syllabus.
+                                        button More Details
+                                        .CoursesPage__Competitive-Course__Details
+                                            .CoursesPage__Competitive-Course__Table-Wrapper
+                                                table.table.CoursesPage__Competitive-Course__Table
+                                                    tbody.table__body
+                                                        tr.table__row
+                                                            td.table__column-title Target
+                                                            td.table__column-data 2019
+                                                        tr.table__row
+                                                            td Class
+                                                            td XII
+                                                        tr.table__row
+                                                            td  Course Name
+                                                            td CET
+                                                        tr.table__row
+                                                            td Course Code
+                                                            td BE
+                                                        tr.table__row
+                                                            td Eligibility
+                                                            td Class XII appearing students
+                                                        tr.table__row
+                                                            td Who Should Join
+                                                            td Class XII appearing students with strong desire to excell in all competitive exams.
+                                                        tr.table__row
+                                                            td Medium of Studies
+                                                            td English
+                                                        tr.table__row
+                                                            td Course Availability
+                                                            td At Gravite Tutorial, New thippasandra, Bangalore
+                                                        tr.table__row
+                                                            td Course Commencement
+                                                            td 20th April, 2019
+                                                        tr.table__row
+                                                            td Course Ends
+                                                            td Till the completion of IIT JEE Mains Exams
+                                                        tr.table__row
+                                                            td Course Duration
+                                                            td 52 Weeks
+                                                        tr.table__row
+                                                            td Admission Process
+                                                            td Contact Admin of Gravite Tutorials(Selection Test)
+                                            
+                                            .CoursesPage__Competitive-Course__Details-Text
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Structure
+                                                    h5 Course Structure
+                                                    p This Course covers the entire CET syllabus of Class XI and XII. The idea behind this course is to make a student learn elementary and important topics of CET curriculam. First Board syllabus is covered on priority then required skills for other competitive exams is given to students. Regular periodic tests are conducted to evaluate the learning of student at Gravite. On the basis of students’ performance in these tests they are reshuffled in order to boost their morale and sprite up the vigor in them.
+                                                
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Content
+                                                    h5 Course Content:
+                                                    ol
+                                                        li Regular Classroom Coaching
+                                                        li 90 minutes lecture which is further divided into DPP discussion of 15 min, Sheet Discussion of next 30 minutes & theoretical and conceptual learning of last 45 minutes.
+                                                        li lectures per subject per week
+                                                        li Total 270 lectures in entire course.
+                                                        li Approximately 450 hours of Classroom Teaching.
+                                                        li Periodic Test is conducted once in a month in the form of Part Test & Cumulative Test.
+                                                        li Regular conduction of Doubt Classes.
+
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Features
+                                                    h5 Distinctive Features:
+                                                    ol
+                                                        li Systematic completion of whole syllabus of CET in one year.
+                                                        li These Courses help in developing a good understanding of basic concepts, logical and methodological approach towards problem solving ability.
+                                                        li Provide knowledge of highest level related to fundamentals and concepts, best possible guidance, speed, accuracy, balanced evaluation of performance on periodic basis, test temperament and right kind of competition.
+                                                        li Conduction of JPTs & APTs give the feel of actual examination to the students.
+                                                        li The Test Series comes out helpful in maintaining level of CET preparation even after completion of Course.
+
+                                    //- NTSE
+                                    li.CoursesPage__Competitive-Course
+                                        h4.CoursesPage__Competitive-Course__Title NTSE (For Class Xth)
+                                        img(src="./src/images/courses/NTSE.jpg", alt="NTSE")
+                                        p This is an program designed for class 10th students.
+                                        p It includes NTSE MAT/SAT preperation for level 1 and Level 2
+                                        p Gravite will provide Modules for Mental ability, Social study, Language, and most importantly Science/Maths
+                                        p Gravite will conduct 10 Full Mock test.
+                                        button More Details
+                                        .CoursesPage__Competitive-Course__Details
+                                            .CoursesPage__Competitive-Course__Table-Wrapper
+                                                table.table.CoursesPage__Competitive-Course__Table
+                                                    tbody.table__body
+                                                        tr.table__row
+                                                            td.table__column-title Target
+                                                            td.table__column-data 2019
+                                                        tr.table__row
+                                                            td Class
+                                                            td XII and XI
+                                                        tr.table__row
+                                                            td  Course Name
+                                                            td NTSE
+                                                        tr.table__row
+                                                            td Course Code
+                                                            td BE
+                                                        tr.table__row
+                                                            td Eligibility
+                                                            td Class XI/XII appearing students
+                                                        tr.table__row
+                                                            td Who Should Join
+                                                            td Class XI/XII appearing students with strong desire to excell in all competitive exams.
+                                                        tr.table__row
+                                                            td Medium of Studies
+                                                            td English
+                                                        tr.table__row
+                                                            td Course Availability
+                                                            td At Gravite Tutorial, New thippasandra, Bangalore
+                                                        tr.table__row
+                                                            td Course Commencement
+                                                            td April, 2019
+                                                        tr.table__row
+                                                            td Course Ends
+                                                            td Till the completion of IIT JEE Mains Exams
+                                                        tr.table__row
+                                                            td Course Duration
+                                                            td 52 Weeks
+                                                        tr.table__row
+                                                            td Admission Process
+                                                            td Contact Admin of Gravite Tutorials(Selection Test)
+                                            
+                                            .CoursesPage__Competitive-Course__Details-Text
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Structure
+                                                    h5 Course Structure
+                                                    p This Course covers the entire IIT-JEE syllabus of Class – XI and XII. The idea behind this course is to make a student learn elementary and important topics of IIT JEE/ CET curriculam. First Board syllabus is covered on priority then required skills for other competitive exams is given to students. Regular periodic tests are conducted to evaluate the learning of student at Gravite. On the basis of students’ performance in these tests they are reshuffled in order to boost their morale and sprite up the vigor in them.
+                                                
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Content
+                                                    h5 Course Content:
+                                                    ol
+                                                        li Regular Classroom Coaching
+                                                        li 90 minutes lecture which is further divided into DPP discussion of 15 min, Sheet Discussion of next 30 minutes & theoretical and conceptual learning of last 45 minutes.
+                                                        li lectures per subject per week
+                                                        li Total 270 lectures in entire course.
+                                                        li Approximately 450 hours of Classroom Teaching.
+                                                        li Periodic Test is conducted once in a month in the form of Part Test & Cumulative Test.
+                                                        li Regular conduction of Doubt Classes.
+
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Features
+                                                    h5 Distinctive Features:
+                                                    ol
+                                                        li Systematic completion of whole syllabus of IIT-JEE in one year.
+                                                        li These Courses help in developing a good understanding of basic concepts, logical and methodological approach towards problem solving ability.
+                                                        li Provide knowledge of highest level related to fundamentals and concepts, best possible guidance, speed, accuracy, balanced evaluation of performance on periodic basis, test temperament and right kind of competition.
+                                                        li Conduction of JPTs & APTs give the feel of actual examination to the students.
+                                                        li The Test Series comes out helpful in maintaining level of IIT-JEE preparation even after completion of Course.
+
+                                    //- ACME
+                                    li.CoursesPage__Competitive-Course
+                                        h4.CoursesPage__Competitive-Course__Title ACME (For Classes VIII / IX/ Xth - CBSE & ICSE Board)
+                                        img(src="./src/images/courses/acme_logo.png", alt="ACME")
+                                        p This is an integrated program designed for class 8th, 9th and10th students.
+                                        p It includes IIT JEE foundation, Board exam preperation and NTSE preparation
+                                        p The Foundation Program intends to give students of class VIII, IX and X, an opportunity to give an extra edge to their future competitive exam preperation. It boost their skills for Board exam and also provides opportunity to prove their logical reasoning capability in NTSE Exam.
+                                        button More Details
+                                        .CoursesPage__Competitive-Course__Details
+                                            .CoursesPage__Competitive-Course__Table-Wrapper
+                                                table.table.CoursesPage__Competitive-Course__Table
+                                                    tbody.table__body
+                                                        tr.table__row
+                                                            td.table__column-title Target
+                                                            td.table__column-data 2019
+                                                        tr.table__row
+                                                            td Class
+                                                            td XII and XI
+                                                        tr.table__row
+                                                            td  Course Name
+                                                            td ACME
+                                                        tr.table__row
+                                                            td Course Code
+                                                            td BE
+                                                        tr.table__row
+                                                            td Eligibility
+                                                            td Class XI/XII appearing students
+                                                        tr.table__row
+                                                            td Who Should Join
+                                                            td Class XI/XII appearing students with strong desire to excell in all competitive exams.
+                                                        tr.table__row
+                                                            td Medium of Studies
+                                                            td English
+                                                        tr.table__row
+                                                            td Course Availability
+                                                            td At Gravite Tutorial, New thippasandra, Bangalore
+                                                        tr.table__row
+                                                            td Course Commencement
+                                                            td May, 2019
+                                                        tr.table__row
+                                                            td Course Ends
+                                                            td Till the completion of IIT JEE Mains Exams
+                                                        tr.table__row
+                                                            td Course Duration
+                                                            td 52 Weeks
+                                                        tr.table__row
+                                                            td Admission Process
+                                                            td Contact Admin of Gravite Tutorials(Selection Test)
+                                            
+                                            .CoursesPage__Competitive-Course__Details-Text
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Structure
+                                                    h5 Course Structure
+                                                    p This Course covers the entire IIT-JEE syllabus of Class – XI and XII. The idea behind this course is to make a student learn elementary and important topics of IIT JEE/ CET curriculam. First Board syllabus is covered on priority then required skills for other competitive exams is given to students. Regular periodic tests are conducted to evaluate the learning of student at Gravite. On the basis of students’ performance in these tests they are reshuffled in order to boost their morale and sprite up the vigor in them.
+                                                
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Content
+                                                    h5 Course Content:
+                                                    ol
+                                                        li Regular Classroom Coaching
+                                                        li 90 minutes lecture which is further divided into DPP discussion of 15 min, Sheet Discussion of next 30 minutes & theoretical and conceptual learning of last 45 minutes.
+                                                        li lectures per subject per week
+                                                        li Total 270 lectures in entire course.
+                                                        li Approximately 450 hours of Classroom Teaching.
+                                                        li Periodic Test is conducted once in a month in the form of Part Test & Cumulative Test.
+                                                        li Regular conduction of Doubt Classes.
+
+                                                .CoursesPage__Competitive-Course__Section.CoursesPage__Competitive-Course__Features
+                                                    h5 Distinctive Features:
+                                                    ol
+                                                        li Systematic completion of whole syllabus of IIT-JEE in one year.
+                                                        li These Courses help in developing a good understanding of basic concepts, logical and methodological approach towards problem solving ability.
+                                                        li Provide knowledge of highest level related to fundamentals and concepts, best possible guidance, speed, accuracy, balanced evaluation of performance on periodic basis, test temperament and right kind of competition.
+                                                        li Conduction of JPTs & APTs give the feel of actual examination to the students.
+                                                        li The Test Series comes out helpful in maintaining level of IIT-JEE preparation even after completion of Course.
+
+                        article(data-src="college").CoursePage__Section.CoursesPage__College
+                            header.CoursePage__Section-Header
+                                h3 College Entrance Exams
+                            .CoursesPage__Section-Body.CoursesPage__Boards-Body
+                                p This course is specially designed to focus on these exams. This course includes revision, 10 mock papers and discussion.
+                                p The exams that we cover are BIT-SAT/ VIT/ MANIPAL/ SRM/ CET/ COMED-K/ PSAT
+
+
+block scripts
+    block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js")
+     
+    script(src="./src/js/common.js")
+    script(src="./src/js/courses.js")

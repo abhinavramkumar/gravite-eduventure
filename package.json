@@ -1,0 +1,27 @@
+{
+  "name": "gravite-parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.pug -p 3000 --open",
+    "build": "parcel build index.pug --public-url .",
+    "prod": "parcel build *.pug --out-dir production --public-url .",
+    "img": "imagemin ./* --out-dir=."
+  },
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "pug": "^2.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gsap": "^2.0.1",
+    "querystringify": "^2.0.0",
+    "siema": "^1.5.1",
+    "validator": "^10.6.0"
+  }
+}

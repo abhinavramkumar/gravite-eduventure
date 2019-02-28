@@ -1,0 +1,140 @@
+#CoursesPage {
+}
+
+.CoursePage__Page-Header {
+  opacity: 0;
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.CoursePage__Page-Content-Wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.CoursesPage__Sidebar {
+  flex-basis: 250px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+}
+
+.CoursesPage__Sidebar-List_Item {
+  padding: 0.5rem;
+  button {
+    border-radius: 0;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    text-align: left;
+  }
+
+  button:hover {
+    color: $green;
+  }
+
+  button:focus,
+  button.active {
+    border-bottom: 2px solid $green;
+    color: $green;
+    outline: none;
+  }
+}
+
+.CoursesPage__Body {
+  flex-basis: calc(100% - calc(250px + 2rem));
+  padding: 2rem;
+  margin-bottom: 2rem;
+  overflow-y: auto;
+  height: 90vh;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+}
+
+.CoursePage__Section {
+  padding: 0;
+  display: none;
+  .container {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  &:first-child {
+    display: block;
+  }
+}
+
+.CoursePage__Section-Header {
+  margin: 0 0 1rem;
+  h3 {
+    font-size: 1.5rem;
+    color: $green;
+  }
+}
+
+.CoursesPage__Section-Body {
+  & > p {
+    margin-bottom: 1rem;
+  }
+}
+
+.CoursesPage__Competitive-Courses-List {
+  margin: 1rem 2rem;
+}
+
+.CoursesPage__Competitive-Course {
+  list-style-type: lower-alpha;
+  border-bottom: 1px solid#ddd;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  img {
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+  }
+  button {
+    margin: 1rem 0;
+    border: 1px solid $green;
+    padding: 0.25rem 0.75rem;
+    color: #fff;
+    background-color: $green;
+  }
+  & > p {
+    margin-bottom: 1rem;
+  }
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.CoursesPage__Competitive-Course__Title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.CoursesPage__Competitive-Course__Section {
+  margin-bottom: 2rem;
+  h5 {
+    margin: 0 0 1rem;
+    font-size: 1.125rem;
+  }
+  ol {
+    margin-left: 1rem;
+  }
+  li {
+    list-style-type: decimal;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.CoursesPage__Competitive-Course__Details {
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+}

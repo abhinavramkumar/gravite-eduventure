@@ -1,0 +1,97 @@
+.Parents-page__Landing {
+  min-height: 400px;
+}
+
+.Parents-page__Landing-Text {
+  opacity: 0;
+  p {
+    margin-bottom: 1rem;
+    color: #222;
+    font-size: $root-font-size;
+  }
+  @include responsive(0, 940px) {
+    padding: 0 1rem;
+  }
+}
+
+.Parents-page__Instructions {
+  min-height: 100vh;
+}
+
+.Parents-page__Instructions-Body {
+  margin: 0 auto;
+  padding: 0 1rem;
+  ul {
+    padding: 0;
+    margin: 0 0 0 1rem;
+  }
+  li {
+    margin-bottom: 1rem;
+    font-size: $root-font-size;
+    padding: 0 1rem;
+    list-style-type: disc;
+    opacity: 0;
+  }
+}
+
+.Parents-page__Testimonials {
+  padding: 2rem 0;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.Parents-page__Testimonials-Body {
+  height: 100%;
+}
+
+.Parents-page__Testimonial {
+  min-height: 150px;
+  border-bottom: 2px solid $green;
+  border-radius: 2px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  &:last-child {
+    border-bottom-color: transparent;
+  }
+}
+
+.Parents-page__Testimonial-Image {
+  flex-basis: 100px;
+  border-radius: 50%;
+  border: 5px solid $green;
+  overflow: hidden;
+  img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+  }
+  @include responsive(768px, 940px) {
+    flex-basis: 90px;
+  }
+  @include responsive(0, 767px) {
+    flex-basis: 80px;
+  }
+}
+
+.Parents-page__Testimonial-Text {
+  flex-basis: calc(100% - 100px);
+  padding: 0 2rem;
+  p {
+    font-size: 13px;
+    color: $text-light;
+    word-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+  }
+  @include responsive(768px, 940px) {
+    flex-basis: calc(100% - 90px);
+    padding: 0 1rem 0 2rem;
+  }
+  @include responsive(0, 767px) {
+    flex-basis: calc(100% - 80px);
+    padding: 0 1rem 0 2rem;
+  }
+}
